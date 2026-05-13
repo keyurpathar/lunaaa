@@ -1,0 +1,182 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.plyr,
+.plyr__video-wrapper,
+.plyr video {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.plyr video {
+    object-fit: cover;
+}
+
+
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/font/poppins/Poppins-Black.woff2') format('woff2'),
+        url('./assets/font/poppins/Poppins-Black.woff') format('woff'),
+        url('./assets/font/poppins/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/font/poppins/Poppins-Bold.woff2') format('woff2'),
+        url('./assets/font/poppins/Poppins-Bold.woff') format('woff'),
+        url('./assets/font/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/font/poppins/Poppins-ExtraBold.woff2') format('woff2'),
+        url('./assets/font/poppins/Poppins-ExtraBold.woff') format('woff'),
+        url('./assets/font/poppins/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/font/poppins/Poppins-ExtraLight.woff2') format('woff2'),
+        url('./assets/font/poppins/Poppins-ExtraLight.woff') format('woff'),
+        url('./assets/font/poppins/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/font/poppins/Poppins-Light.woff2') format('woff2'),
+        url('./assets/font/poppins/Poppins-Light.woff') format('woff'),
+        url('./assets/font/poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/font/poppins/Poppins-Medium.woff2') format('woff2'),
+        url('./assets/font/poppins/Poppins-Medium.woff') format('woff'),
+        url('./assets/font/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/font/poppins/Poppins-Regular.woff2') format('woff2'),
+        url('./assets/font/poppins/Poppins-Regular.woff') format('woff'),
+        url('./assets/font/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/font/poppins/Poppins-SemiBold.woff2') format('woff2'),
+        url('./assets/font/poppins/Poppins-SemiBold.woff') format('woff'),
+        url('./assets/font/poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/font/poppins/Poppins-Thin.woff2') format('woff2'),
+        url('./assets/font/poppins/Poppins-Thin.woff') format('woff'),
+        url('./assets/font/poppins/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/font/lato/Lato-Black.woff2') format('woff2'),
+        url('./assets/font/lato/Lato-Black.woff') format('woff'),
+        url('./assets/font/lato/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/font/lato/Lato-Bold.woff2') format('woff2'),
+        url('./assets/font/lato/Lato-Bold.woff') format('woff'),
+        url('./assets/font/lato/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/font/lato/Lato-Light.woff2') format('woff2'),
+        url('./assets/font/lato/Lato-Light.woff') format('woff'),
+        url('./assets/font/lato/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/font/lato/Lato-Regular.woff2') format('woff2'),
+        url('./assets/font/lato/Lato-Regular.woff') format('woff'),
+        url('./assets/font/lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@theme {
+    --font-pop: 'poppins', sans-serif;
+    --font-lato: 'lato', sans-serif;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
